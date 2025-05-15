@@ -1,0 +1,159 @@
+body {
+   font-family: 'Arial', sans-serif;
+   background: #1f2a44; /* Solid dark blue background */
+   margin: 0;
+   padding: 20px;
+   color: #fff;
+   min-height: 100vh;
+ }
+ 
+ .container {
+   background: #1f2a44;
+   border-radius: 20px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+ 
+ h1, h2, h3 {
+   color: #fff;
+   margin: 0 0 10px 0;
+ }
+ 
+ h1 {
+   font-size: 24px;
+ }
+ 
+ h2 {
+   font-size: 18px;
+ }
+ 
+ h3 {
+   font-size: 16px;
+ }
+ 
+ .cards {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+ }
+ 
+ .card {
+   background: #2a3555;
+   padding: 20px;
+   border-radius: 15px;
+   flex: 1;
+   min-width: 200px;
+   font-size: 24px;
+   font-weight: bold;
+ }
+ 
+ form#transaction-form {
+   background: #2a3555;
+   padding: 20px;
+   border-radius: 15px;
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+ }
+ 
+ .budget-container {
+   background: #2a3555;
+   border-radius: 15px;
+   padding: 0; /* Padding will be handled by the form inside */
+ }
+ 
+ .budget-container summary {
+   padding: 10px 20px;
+   cursor: pointer;
+   outline: none;
+ }
+ 
+ .budget-container summary h2 {
+   margin: 0;
+   display: inline; /* Ensure the h2 aligns properly */
+ }
+ 
+ .budget-container form#budget-form {
+   padding: 10px 20px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+ 
+ .budget-row {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ }
+ 
+ .budget-row label {
+   flex: 0 0 150px;
+ }
+ 
+ form select, form input, form button {
+   padding: 10px;
+   border: none;
+   border-radius: 10px;
+   background: #3a4565;
+   color: #fff;
+ }
+ 
+ form button {
+   background: #1e90ff;
+   cursor: pointer;
+ }
+ 
+ .charts {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+ }
+ 
+ .chart-container {
+   background: #2a3555;
+   padding: 20px;
+   border-radius: 15px;
+   flex: 1;
+   min-width: 300px;
+ }
+ 
+ .chart-container canvas {
+   max-height: 300px;
+ }
+ 
+ #alert-box {
+   padding: 15px;
+   background: #2a3555;
+   color: #fff;
+   border-radius: 15px;
+ }
+ 
+ #alert-box .alert-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ #alert-box .alert-list li {
+   padding: 10px;
+   margin-bottom: 5px;
+   border-radius: 8px;
+ }
+ 
+ #alert-box .alert-list li.upcoming {
+   background: #e74c3c; /* Red for upcoming expenses */
+ }
+ 
+ #alert-box .alert-list li.over-budget {
+   background: #f39c12; /* Orange for over-budget */
+ }
+ 
+ #alert-box .alert-list li.run-out {
+   background: #9b59b6; /* Purple for run out of money */
+ }
+ 
+ #alert-box .alert-list li.default {
+   background: transparent;
+ }
